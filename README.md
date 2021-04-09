@@ -1,5 +1,4 @@
-# snake-game
-A 2D snake game 
+# 2D Snake Game
 
 In this game, the user controls a snake using the keyboard, and the snake grows in speed and length each time it eats the food on the screen. Internally, the game state includes:
 
@@ -36,6 +35,7 @@ These files define the Game class and the game `loop: Game::Run`. The Game class
 These files define the Renderer class which uses the SDL library to render the game to the screen. The Renderer class constructor creates the SDL window and an SDL renderer object that can draw in the window. The `Renderer::Render` method draws the food and the snake in the window using the SDL renderer.
 - `controller.h` and `controller.cpp`: 
 These files define the Controller class. This class handles keyboard input using the SDL libary, and it sets the snake's direction based on the input.
+
 ### reference
 - [Game loop](https://gameprogrammingpatterns.com/game-loop.html)
 - [Game loop with SDL library](http://www.informit.com/articles/article.aspx?p=2928180&seqNum=4)
