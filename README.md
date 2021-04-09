@@ -36,7 +36,20 @@ These files define the Renderer class which uses the SDL library to render the g
 - `controller.h` and `controller.cpp`: 
 These files define the Controller class. This class handles keyboard input using the SDL libary, and it sets the snake's direction based on the input.
 
-### reference
+### Dependencies for Run time environment
+* [cmake >= 3.7](https://cmake.org/install/)
+* [make >= 4.1](https://developer.apple.com/xcode/features/),[Windows](http://gnuwin32.sourceforge.net/packages/make.htm)
+* [SDL2 >= 2.0](https://wiki.libsdl.org/Installation)
+  >Note that for Linux, an `apt` or `apt-get` installation is preferred to building from source. 
+* [gcc/g++ >= 5.4](https://developer.apple.com/xcode/features/)
+* [MinGW](http://www.mingw.org/)
+
+## Basic Build Instructions
+1. Make a build directory in the top level directory: `mkdir build && cd build`
+2. Compile: `cmake .. && make`
+3. Run it: `./SnakeGame`.
+
+### Reference
 - [Game loop](https://gameprogrammingpatterns.com/game-loop.html)
 - [Game loop with SDL library](http://www.informit.com/articles/article.aspx?p=2928180&seqNum=4)
 - [SDL library](https://www.libsdl.org/)
