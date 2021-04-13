@@ -1,14 +1,15 @@
 # 2Players 2D Snake Game
 
-<img src = "snake.gif" height = "500" />
-In this game, two users can play each Left snake(Green color) and Right snake(Blue color) by controling each snake using the separate part of the keyboard. In case of Left(Green) snake, one user can use w,s,a,d keys for up/down/left/right and in case of Right Snake (Blue color) the other user can control with arrow keys. Each snake can get the score once it eats food (yellow color) and the snake who gets more scores, winds the game. However, any snake touches the bomb(red) on the screen, then the game is over. Internally, the game state includes:
+In this game, two users can play each Left snake(Green color) and Right snake(Blue color) by controling each snake using the separate part of the keyboard. In case of Left(Green) snake, one user can use w,s,a,d keys for up/down/left/right and in case of Right Snake (Blue color) the other user can control with arrow keys. Each snake can get the score once it eats food (yellow color) and the snake who gets more scores, winds the game. However, any snake touches the bomb(red) on the screen, then the game is over. 
+|Result| code structure| 
+|--| --| 
+|<img src = "snake.gif" height = "500" />| Internally, the game state includes:
 - the speed of each snake
 - the current direction each snake is travelling
 - the float position of each snake's head
 - a vector of int coordinates representing each snake's body
 - the position of the foods
-- the position of the bombs
-
+- the position of the bombs|
 At each pass through the game loop, the steps
 - Input: the keyboard input is handled and used to set the future direction of each snake.
     - Left snake : w(up), s(down), a(left), d(right)
