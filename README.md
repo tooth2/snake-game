@@ -1,18 +1,19 @@
-# 2D Snake Game
+# 2Players 2D Snake Game
 
-In this game, the user controls a snake using the keyboard, and the snake grows in speed and length each time it eats the food on the screen. Internally, the game state includes:
+In this game, the user can choose Left or Right snake which controls a snake using the keyboard (Left snake: w,s,a,d keys, Right Snake : arrow keys), and the snake grows in speed and length each time it eats the food(yello) or it can touch the bomb(red)  on the screen. Internally, the game state includes:
 
-- the speed of the snake
-- the current direction the snake is travelling
-- the float position of the snake's head
-- a vector of int coordinates representing the snake's body
-- the position of the food
-- other state data needed to make the game function
+- the speed of each snake
+- the current direction each snake is travelling
+- the float position of each snake's head
+- a vector of int coordinates representing each snake's body
+- the position of the foods
+- the position of the bombs
 
 At each pass through the game loop, the steps
-
-- Input: the keyboard input is handled and used to set the future direction of the snake.
-- Update: The snake's position, length, and velocity are updated. If the snake has just eaten the food, a new food item is created.
+- Input: the keyboard input is handled and used to set the future direction of each snake.
+    - Left snake : w(up), s(down), a(left), d(right)
+    - Right snamke: arrow up, arrow down, arrow left, arrow right
+- Update: Each snake's position, length, and velocity are updated. If each snake has eaten the food, a new food item is created. Once any snake touches a bomb, it loses the game and over.
 - Render: The game state is drawn to the screen. The entire game loop happens approximately 60 times per second, so the rendering and motion look fairly smooth, even though every update is a discrete change to the game state.
 
 The positions of the snake head and snake body are not stored in a 2D array in the current implementation, even though would also be a reasonable way to store some of the game state. However, the game is still rendered according to a 2D grid, and not using continuous coordinates. This happens even though the head coordinates are stored and updated with floats. By storing the head coordinates with floats, the program updates the head position according to a fixed velocity. By rendering according to a grid, the vintage, grid-based aesthetic of the game can be maintained.
