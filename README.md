@@ -1,4 +1,6 @@
 # 2Players 2D Snake Game
+
+![snake_game](snake.gif)
 In this game, two users can play each Left snake(Green color) and Right snake(Blue color) by controling each snake using the separate part of the keyboard. In case of Left(Green) snake, one user can use w,s,a,d keys for up/down/left/right and in case of Right Snake (Blue color) the other user can control with arrow keys. Each snake can get the score once it eats food (yellow color) and the snake who gets more scores, winds the game. However, any snake touches the bomb(red) on the screen, then the game is over. Internally, the game state includes:
 - the speed of each snake
 - the current direction each snake is travelling
